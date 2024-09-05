@@ -73,6 +73,7 @@ class PriceAnalyzer:
 
     def export_to_html(self, data, filename='output.html'):
         with open(filename, 'w', encoding='utf-8') as file:
+            file.write('<meta charset="UTF-8">\n')
             file.write('<table border="1">\n')
             file.write(
                 '<tr><th>№</th><th>Наименование</th><th>Цена</th><th>Вес</th><th>Файл</th><th>Цена за кг</th></tr>\n')
